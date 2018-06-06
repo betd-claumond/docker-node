@@ -6,10 +6,10 @@ RUN addgroup -g 1000 node \
 # if needed later    && apk add --no-cache \
 # if needed later        libstdc++ \
 
-# nodejs 8.11.2
+# nodejs et npm 8.11.2
 # https://pkgs.alpinelinux.org/packages?name=nodejs&branch=edge
-
-RUN apk add --no-cache nodejs
+# https://pkgs.alpinelinux.org/packages?name=nodejs-npm&branch=edge
+RUN apk add --no-cache nodejs nodejs-npm
 
 # yarn 1.7.0
 # https://pkgs.alpinelinux.org/packages?name=yarn&branch=edge
